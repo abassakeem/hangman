@@ -1,0 +1,67 @@
+.hangman-drawing-cover{
+  position: relative;
+
+}
+.top-bar{
+  height: 10px;
+  width: 150px;
+  background: black ;
+  margin-left: 120px;
+}
+.small-verical-bar{
+  position: absolute;
+  height: 40px;
+  width: 10px;
+  background: black;
+  right:0
+}
+.vertical-bar{
+  height: 400px;
+  width: 10px;
+  background: black;
+  margin-left: 120px;
+}
+
+.bottom-bar{
+  height: 10px;
+  width: 250px;
+  background: black ;
+}
+
+.hangman-word-container{
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: monospace;
+  font-size: 6rem;
+  letter-spacing: .3em;
+}
+.key-box{
+ 
+  margin: 10px;
+}
+.keyboard-key{
+  text-transform: capitalize;
+ border: 3px solid black;
+  font-size:20px;
+  padding: 10px 20px;
+  width: 60px;
+  aspect-ratio: 1 /1;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+}
+.keyboard-key:hover:not(:disabled),.keyboard-key:focus:not(:disabled){
+  background-color: hsl(200, 100%, 78%);
+}
+.keyboard-key.active{
+  background-color: hsl(200, 100%, 50%);
+  color: #fff;
+}
+.keyboard-key.inactive{
+ opacity: .3;}
+
+ .lose-win{
+  padding: 20px;
+  
+ }
