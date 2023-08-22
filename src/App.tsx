@@ -66,7 +66,7 @@ function App() {
       <Container>
         <Row>
           <div className=" hangman-container d-flex flex-column justify-content-center align-items-center">
-               
+               <h1 className="text-center mt-5">Hangman</h1>
           
             <Col className='mt-5'>
                 <HangmanDrawing numberOfGuesses={incorrectLetters.length} />

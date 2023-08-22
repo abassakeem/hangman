@@ -1,7 +1,8 @@
 
     const HEAD = (
-  <div
+  <div className="head"
     style={{
+      
       width: "50px",
       height: "50px",
       borderRadius: "100%",
@@ -14,7 +15,7 @@
 )
 
 const BODY = (
-  <div
+  <div className="body"
     style={{
       width: "10px",
       height: "150px",
@@ -27,8 +28,8 @@ const BODY = (
 )
 
 const RIGHT_ARM = (
-  <div
-    style={{
+  <div className="right-arm"
+    style={{ 
       width: "90px",
       height: "10px",
       background: "black",
@@ -42,7 +43,7 @@ const RIGHT_ARM = (
 )
 
 const LEFT_ARM = (
-  <div
+  <div className="left-arm"
     style={{
       width: "90px",
       height: "10px",
@@ -56,7 +57,7 @@ const LEFT_ARM = (
   />
 )
 const LEFT_LEG = (
-    <div
+    <div className="left-leg"
       style={{
         width: "100px",
         height: "10px",
@@ -71,7 +72,7 @@ const LEFT_LEG = (
   )
 
 const RIGHT_LEG = (
-  <div
+  <div className="right-leg"
     style={{
       width: "100px",
       height: "10px",

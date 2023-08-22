@@ -65,3 +65,97 @@
   padding: 20px;
   
  }
+
+
+ @media only screen and (max-width:750px) {
+  .top-bar{
+    height: 5px;
+    width: 75px;
+    background: black ;
+    margin-left: 120px;
+  }
+  .small-verical-bar{
+    position: absolute;
+    height: 30px;
+    width: 5px;
+    background: black;
+    right:50px;
+  }
+  .vertical-bar{
+    height: 200px;
+    width: 5px;
+    background: black;
+    margin-left: 120px;
+  }
+  
+  .bottom-bar{
+    height: 5px;
+    width: 250px;
+    background: black ;
+  }
+
+  .head{
+    width: 25px !important;
+    height: 25px !important;
+    border: 4px solid #000 !important;
+    top: 30px  !important;
+    right: 40px !important;
+  }
+  .body{
+    width: 5px !important;
+    height: 55px !important;
+    
+    top: 55px  !important;
+    right: 50px !important;
+  }
+  .left-arm{
+    width: 5px !important;
+    height: 55px !important;
+    
+    top: 35px  !important;
+    right: 50px !important;
+  }
+  
+  .right-arm{
+    width: 5px !important;
+    height: 55px !important;
+    
+    top: 35px  !important;
+    right: 50px !important;
+  }
+  .right-leg{
+    width: 50px !important;
+    height: 5px !important;
+    top: 105px !important;
+    right: 5px !important;
+  }
+  .left-leg{
+    width: 50px !important;
+    height: 5px !important;
+    top: 105px !important;
+    right: 50px !important;
+  }
+  
+  .keyboard-key{
+    text-transform: capitalize;
+   border: 2px solid black;
+    font-size:14px;
+    padding: 8px;
+    width: 40px;
+    aspect-ratio: 1 /1;
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+    background-color: transparent;
+  }
+
+  
+.hangman-word-container{
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: monospace;
+  font-size: 1.5rem;
+  letter-spacing: .3em;
+  
+}
+ }
