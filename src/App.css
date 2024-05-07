@@ -32,7 +32,7 @@
   font-weight: bold;
   text-transform: capitalize;
   font-family: monospace;
-  font-size: 6rem;
+  font-size: 3rem;
   letter-spacing: .3em;
 }
 .key-box{
@@ -49,6 +49,7 @@
   font-weight: bold;
   cursor: pointer;
   color: black;
+  border-radius: 12px;
   background-color: transparent;
 }
 .keyboard-key:hover:not(:disabled),.keyboard-key:focus:not(:disabled){
