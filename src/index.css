@@ -313,7 +313,7 @@ h1 span {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(65vw); /* Adjust distance as needed */
+      transform: translateX(100vw); /* Adjust distance as needed */
     }
   }
 @keyframes moveAcrossScreen2 {
@@ -321,7 +321,7 @@ h1 span {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(65vw); /* Adjust distance as needed */
+      transform: translateX(100vw); /* Adjust distance as needed */
     }
   }
 
