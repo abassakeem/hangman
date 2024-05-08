@@ -2,6 +2,8 @@
   position: relative;
 
 }
+
+
 .top-bar{
   height: 10px;
   width: 150px;
@@ -12,10 +14,12 @@
   position: absolute;
   height: 40px;
   width: 10px;
+  
   background: black;
   right:0
 }
 .vertical-bar{
+  
   height: 400px;
   width: 10px;
   background: black;
@@ -26,6 +30,7 @@
   height: 10px;
   width: 250px;
   background: black ;
+  border-radius:30px;
 }
 
 .hangman-word-container{
@@ -41,10 +46,11 @@
 }
 .keyboard-key{
   text-transform: capitalize;
- border: 3px solid black;
+ border: 1px solid black;
   font-size:20px;
   padding: 10px 20px;
   width: 60px;
+  font-family: "Raleway", sans-serif;
   aspect-ratio: 1 /1;
   font-weight: bold;
   cursor: pointer;
@@ -55,6 +61,10 @@
 .keyboard-key:hover:not(:disabled),.keyboard-key:focus:not(:disabled){
   background-color: hsl(200, 100%, 78%);
 }
+.keyboard-key.hover{
+  background-color: hsl(200, 100%, 78%) !important;
+  color: #fff;
+}
 .keyboard-key.active{
   background-color: hsl(200, 100%, 50%);
   color: #fff;
@@ -64,9 +74,15 @@
 
  .lose-win{
   padding: 20px;
+  width: 100% !important;
   
  }
-
+.lose-win h5{
+  font-family: "Raleway", sans-serif;
+}
+.lose-win p{
+  font-family: "Raleway", sans-serif;
+}
 
  @media only screen and (max-width:750px) {
   .top-bar{
@@ -139,7 +155,7 @@
   
   .keyboard-key{
     text-transform: capitalize;
-   border: 2px solid black;
+   border: 0.1px solid black;
     font-size:14px;
     padding: 8px;
     width: 40px;

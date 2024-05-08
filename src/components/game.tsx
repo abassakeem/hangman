@@ -64,67 +64,69 @@ const Game = () => {
 
   return (
     <>
-      <Container>
-        <Row>
-          <div className=" hangman-container d-flex flex-column justify-content-center align-items-center">
-            <h1 className="text-center mt-5">Hangman</h1>
+    <div className="game-container vh-100">
 
-            <Col xs="4" className="mt-5">
-              <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
-              <div className="lose-win  text-center">
-                {isWinner ? (
-                  <div>
-                    <h5 className="text-primary">YOU WONNN</h5>
-                    <p>Play another Round</p>
-                    <span className="text-primary">
-                      {" "}
-                      Press Enter To Restart Or Click ---{" "}
-                    </span>{" "}
+   
+      <Container>
+        {" "}
+        <h1 className="text-center mt-3 game-header">Hangman</h1>
+        <Row className="d-flex  justify-content-between align-items-center">
+          {" "}
+          <Col xs={12} md={3} className="mt-5">
+            <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
+          </Col>
+          <Col xs={12} md={3} className="text-center">
+            <Col className="lose-win  text-center">
+              {isWinner ? (
+                <div>
+                  <h5 className="text-primary">YOU WONNN 😄</h5>
+                  <p>Play another Round ?😏</p>
+                  <span className="text-primary">
+                    {" "}
+                    Press Enter To Restart Or Click ---{" "}
+                  </span>{" "}
+                  <button
+                    className="btn btn-primary mt-2"
+                    onClick={() => window.location.reload()}
+                  >
+                    another game?
+                  </button>
+                </div>
+              ) : null}
+              {isLoser ? (
+                <div>
+                  <h5 className="text-danger">Better luck next time 😢</h5>{" "}
+                  <p className="text-danger">
+                    {" "}
+                    Press Enter To Restart Or Click
                     <button
-                      className="btn btn-primary"
-                      onClick={() => window.location.reload()}
-                    >
-                      another game?
-                    </button>
-                  </div>
-                ) : null}
-                {isLoser ? (
-                  <div>
-                    <h5 className="text-danger">Better luck next time</h5>{" "}
-                    <span className="text-danger">
-                      {" "}
-                      Press Enter To Restart Or Click ---{" "}
-                    </span>
-                    <button
-                      className="btn btn-danger"
+                      className="btn btn-danger m-2"
                       onClick={() => window.location.reload()}
                     >
                       Retry
-                    </button>
-                  </div>
-                ) : null}
-              </div>
+                    </button>{" "}
+                  </p>
+                </div>
+              ) : null}
             </Col>
-            <Col>
-              <HangmanWord
-                reveal={isLoser}
-                guessedLetters={guessedLetters}
-                wordToGuess={wordToGuess}
-              />
-            </Col>
-            <Col xs={6} className="mt-5">
-              <HangmanKeyboard
-                disabled={isWinner || isLoser}
-                activeLetters={guessedLetters.filter((letter) =>
-                  wordToGuess.includes(letter)
-                )}
-                inactiveLetters={incorrectLetters}
-                addGuessedLetter={addGuessedLetter}
-              />
-            </Col>
-          </div>
+            <HangmanWord
+              reveal={isLoser}
+              guessedLetters={guessedLetters}
+              wordToGuess={wordToGuess}
+            />
+          </Col>
+          <Col xs={12} className="mt-5">
+            <HangmanKeyboard
+              disabled={isWinner || isLoser}
+              activeLetters={guessedLetters.filter((letter) =>
+                wordToGuess.includes(letter)
+              )}
+              inactiveLetters={incorrectLetters}
+              addGuessedLetter={addGuessedLetter}
+            />
+          </Col>
         </Row>
-      </Container>
+      </Container> </div>
     </>
   );
 };

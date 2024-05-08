@@ -9,12 +9,44 @@
 
 }
 
+.landing-container{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../src//assets/hangman2.png");
+  background-color: rgba(0,0,0 ,0.6);
+  background-size:cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  
+}
+
 .header-title h1 {
   font-family: "Jersey 10", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 18em !important;
+  font-size: 15em ;
   line-height: 160px;
+
+  color: #fff;
+  animation: flicker 4s alternate infinite;
+}
+@keyframes flicker {
+  0%{
+    color: #fff;
+  }
+  25%{
+    color: rgb(169, 169, 216);
+  }
+  50%{
+   color: #fff
+  }
+  75%{
+    color: rgb(193, 145, 145)
+  }
+
+  100%{
+    color: #392b2b;
+
+  }
+  
 }
 h1 span {
   display: inline-block; /* Ensure each letter is treated as a block element */
@@ -29,7 +61,7 @@ h1 span {
 .landing-container{
     background-color: #fff;
     position: relative; 
-    overflow: hidden;
+ 
 }
 .running-container{
     position: absolute;
@@ -39,16 +71,32 @@ h1 span {
     font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: lighter;
+  color: #fff;
+ 
   font-style: normal;
+}
+.btn-primary{
+  border-radius: 30px;
+  background-color: rgb(51, 51, 71);
+}
+
+.slogan-row{
+  
+  padding: 2em 1em;
+  border-radius: 12px;
 }
 .game-link{
     padding: 0.5em 2em;
-    background-color: #4d4960;
+    background-color: #6b658b;
     color: #fff;
     text-decoration: none;
     border-radius: 30px 12px 45px 19px;
-    font-family: "Jersey 10", sans-serif;
+
     font-weight: lighter;
+}
+.game-header{
+  font-family: "Jersey 10", sans-serif;
+  font-size: 3em;
 }
 .game-link:hover{
     color: #4d4960;
@@ -276,3 +324,36 @@ h1 span {
       transform: translateX(65vw); /* Adjust distance as needed */
     }
   }
+
+  /* Styles for the biggest screens */
+@media screen and (min-width: 1200px) {
+  /* Add your styles here */
+}
+
+/* Styles for large screens */
+@media screen and (max-width: 1199px) {
+  /* Add your styles here */
+}
+
+/* Styles for medium screens */
+@media screen and (max-width: 991px) {
+  /* Add your styles here */
+}
+
+/* Styles for small screens */
+@media screen and (max-width: 767px) {
+  /* Add your styles here */
+}
+
+/* Styles for extra small screens */
+@media screen and (max-width: 575px) {
+  .header-title h1 {
+    font-size: 8em;
+    line-height:70px;
+  }
+  
+  .pic-col{
+    align-items: center !important;
+    
+  }
+}
